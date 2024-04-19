@@ -1,0 +1,106 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.min-h-12 {
+    min-height: 12rem;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.5s;
+}
+.layout-enter,
+.layout-leave-active {
+  opacity: 0;
+}
+
+.text-primary{
+  color: #39aee9;
+}
+
+.bg-primary{
+  background-color: #39aee9;
+}
+
+
+.ab-primary{
+  color: #39aee9;
+}
+.ab-primary-fill{
+  fill: #39aee9;
+}
+
+
+
+
+.ab-btn{
+  -webkit-text-size-adjust: 100%;
+  --uicomponents-font-family: "Lexend Deca",Helvetica,Arial,sans-serif;
+  --global-nav-height: 86px;
+  --uicomponents-global-nav-height: 86px;
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  text-transform: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-font-smoothing: auto;
+  font-family: var(--uicomponents-font-family,"Lexend Deca",Helvetica,Arial,sans-serif);
+  font-weight: 400;
+  text-align: center;
+  user-select: none;
+  transition: all .15s ease-out;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px 16px;
+  width: 100%;
+  background-color: #ff7a59;
+  border-color: #ff7a59;
+  color: #fff;
+}
+
+
+.ab-btn-grey{
+  -webkit-text-size-adjust: 100%;
+  --uicomponents-font-family: "Lexend Deca",Helvetica,Arial,sans-serif;
+  --global-nav-height: 86px;
+  --uicomponents-global-nav-height: 86px;
+  list-style: none;
+  word-break: break-word;
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  text-transform: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-font-smoothing: auto;
+  text-align: center;
+  user-select: none;
+  transition: all .15s ease-out;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 11px 24px;
+  font-family: var(--uicomponents-font-family,"Lexend Deca",Helvetica,Arial,sans-serif);
+  font-weight: 500;
+  margin-left: 12px;
+  background-color: #cbd6e2;
+  border-color: #7c98b6;
+  color: #506e91;
+}
