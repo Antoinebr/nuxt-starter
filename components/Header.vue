@@ -52,19 +52,6 @@
           <NuxtLink to="/profile"> Profile </NuxtLink>
         </li>
 
-
-        <li v-if="loggedIn" class=" border-b mb-2">
-          <NuxtLink to="/search"> Search </NuxtLink>
-        </li>
-
-        <li v-if="loggedIn" class=" border-b mb-2">
-          <NuxtLink to="/hubspot"> HubSpot connection </NuxtLink>
-        </li>
-
-        <li v-if="loggedIn" class="border-b mb-2">
-          <a :href="this.getInstallURL()" class="bg-orange border-b mb-2 mt-2 rounded-md text-xs text-center  block py-1 text-white leading-6 p-1 pl-4 pr-4 w-full"> Connect your HubSpot Portal</a>
-        </li>
-
         <li v-if="loggedIn" @click="signout"
           class="border-b mb-2 mt-2 rounded-md bg-gray-400 text-sm text-center  text-white leading-6 p-1 pl-4 w-full">
           Sign out </li>

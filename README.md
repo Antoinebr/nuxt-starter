@@ -4,18 +4,54 @@
 
 ## Project Setup 
 
-Set the Firebase project in ```nuxt.config.js```
 
+### Firebase : 
 
+### Create a new web app in Firebase
+
+Firebase will give an object ocntaining the credential for the project : 
+
+Use the firebase config in ```nuxt.config.js```
 ```js
-    config: {
-        apiKey: "qsdqsdqdsqsdqds",
-        authDomain: "ab-app-2dds94.firebaseapp.com",
-        projectId: "ab-app-2b4",
-        storageBucket: "ab-ab94.appspot.com",
-        messagingSenderId: "207230362199",
-        appId: "1:20723wcw2199:web:e4f4912"
+const firebaseConfig = {
+    apiKey: "qsdqsdqdsqsdqds",
+    authDomain: "ab-app-2dds94.firebaseapp.com",
+    projectId: "ab-app-2b4",
+    storageBucket: "ab-ab94.appspot.com",
+    messagingSenderId: "207230362199",
+    appId: "1:20723wcw2199:web:e4f4912"
+}
+```
+
+### Use the Firebase Auth 
+
+Just go to ``` https://console.firebase.google.com/project/<projectId>/authentication/users ``` and enable auth
+
+Login and set the first data in the firebase store it will create a collection named ```Users```
+
+### Set rules on Firestore : 
+
+```JavaScript
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+     match /users/{userId} {
+      allow read: if request.auth.uid == userId;
+      
+      // Define rules for individual documents within the user's data.
+      match /{document=**} {
+        allow write: if request.auth.uid == userId;
+      }
     }
+    
+  }
+}
+```
+With those rules : users can only modify their own data within this collection.
+
+
 ```
 
 ## Build Setup
