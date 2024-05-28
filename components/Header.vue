@@ -56,7 +56,7 @@
           class="border-b mb-2 mt-2 rounded-md bg-gray-400 text-sm text-center  text-white leading-6 p-1 pl-4 w-full">
           Sign out </li>
         
-        <li v-if="!loggedIn" class="border-b mb-2 mt-2 rounded-md bg-orange text-sm text-center  text-white leading-6 p-1 pl-4 w-full">
+        <li v-if="!loggedIn" class="border-b mb-2 mt-2 rounded-md bg-primary text-sm text-center text-white leading-6 p-1 pl-4 w-full">
           <NuxtLink to="/login"> Login </NuxtLink>
         </li>
 
