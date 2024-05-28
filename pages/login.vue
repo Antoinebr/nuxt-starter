@@ -22,7 +22,7 @@
                             placeholder="password" v-model="password" type="password" required>
                     </div>
 
-                    <button class="bg-orange rounded-xl text-white font-medium text-sm block w-full px-4 py-2 hover:bg-black/80" >Login</button>
+                    <button class="bg-primary rounded-xl text-white font-medium text-sm block w-full px-4 py-2 hover:bg-black/80" >Login</button>
 
                 </form>
             </div>
